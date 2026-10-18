@@ -271,7 +271,7 @@ header .logo p a{
 footer{
     background-color: black;
     color: #eeedec;
-    padding: 10px 10px 10px 300px;
+    padding: 10px 10px 10px 100px;
     
 
 
@@ -518,7 +518,7 @@ textarea::placeholder{
 
 
 /* Media query for small screens */
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 360px) {
 
     .navbar {
         flex-direction: column;
