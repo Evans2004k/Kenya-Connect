@@ -11,6 +11,10 @@ header{
     display: flex;
     justify-content: space-between;
 }
+header .logo p a{
+    text-decoration: none;
+    color: #ffde4b;
+}
 .logo{
 
     font-size: 24px;
@@ -39,9 +43,11 @@ header{
 }
 .nav-links a:hover{
     color: #ffde4b;
+    
 }
-.nav-links a:active{
+.nav-links a.active{
     color: #e23434;
+    font-weight: bold;
 }
 .nav-links a li{
     text-decoration: none;
@@ -99,65 +105,91 @@ header{
 .category-card{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 0.5fr));
-    gap: 20px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
 }
 .item-card1{
     background-color: #000;
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
 }
 .item-card2{
     background-color: rgb(49, 121, 216);
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
 }
 .item-card3{
     background-color: #f88a57;
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
 }
 .item-card4{
     background-color: #31b838;
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
 }
 .item-card5{
     background-color: #e23434;
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
 }
 .item-card6{
     background-color: #33aab9;
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
 }
 .item-card7{
     background-color: #000;
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
 }
 .item-card8{
     background-color: #473dd3;
     color: #faf2e1;
-    width:  120px;
-    align-items: center;
+    font-weight: bold;
+    width:  200px;
+    height: 150px;
+    justify-items: center;
     border-radius: 10px;
+}
+    
+.view-all{
+    margin: 20px auto;
+}
+.view-all a{
+    font-weight: bold;
+    color: black;
+    
+    
 }
 
 
@@ -173,7 +205,7 @@ header{
     border-radius: 5px;
     padding: 20px;
     margin: 20px auto;
-    max-width: 300px;
+    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .provider-card img{
@@ -184,11 +216,17 @@ header{
 }
 .provider-card button{
     border-radius: 10px;
-    width: 120px;
-    height: 30px;
+    width: 140px;
+    height: 40px;
     color: white;
     background-color: #000;
+    font-weight: bold;
     color: #ebe2d8;
+    justify-self: center;
+}
+#call-button{
+    background-color: #28742c;
+    font-weight: bold;
 }
 
 
@@ -286,7 +324,12 @@ footer{
 #city-button button{
     background-color: #000000;
     color: #f0e7cf;
-    border-radius: 20px;
+    border-radius: 15px;
+    border-color: black;
+    font-weight: bold;
+    margin: 10px;
+    width: 90px;
+    height: 30px;
 }
 .container{
     display: grid;
@@ -334,6 +377,19 @@ footer{
     display: grid;
     justify-content: center;
 
+    
+
+}
+.how-it-works-customers button{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: black;
+    color:#faf2e1;
+    font-weight: bold;
+    font-size:20px;
+    justify-self: center;
+
 }
 .stage{
     background-color: white;
@@ -346,11 +402,23 @@ footer{
     background-color: #000;
     color: black;
     border-radius: 10px;
-    padding: 10px;
     display: grid;
     justify-content: center;
+    margin: 20px;
+    padding: 20px;
 
 }
+.how-it-works-for-service-providers button{
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #ffaa2b;
+    color: black;
+    font-weight: bold;
+    font-size:20px;
+    justify-self: center;
+}
+
 .level{
     background-color: #f0e7cf;
     color: #000;
@@ -358,7 +426,7 @@ footer{
     padding: 10px;
     border-radius: 10px;
 }
-/*--------be a provider page styles------*/
+/*--------become a provider page styles------*/
 
 .hero-services{
     background-color: #ffaa2b;
@@ -384,12 +452,24 @@ footer{
     margin: 20px;
     padding: 20px;
 }
+.right-register form label{
+    font-size: 25px;
+}
 .right-register form input{
     border-radius: 10px;
     width: 200px;
-    height: 25px;
+    height: 30px;
+    font-size: 20px;
     background-color: #faf2e1;
 }
+.right-register form input[type="submit"]{
+    background-color: black;
+    color: #ccc;
+    font-weight: bold;
+    height: 50px;
+    width: 100px;
+}
+
 .left-register{
     background-color: #000;
     color: #ebe2d8;
@@ -399,6 +479,23 @@ footer{
     height: auto;
 
 }
+textarea{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #d9d0bd;
+    border-radius: 20px;
+    background-color: #f6eedb;
+    color: #17251c;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+}
+textarea::placeholder{
+    color: #85877f;
+    opacity: 1;
+
+}
+
 
 
 
