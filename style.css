@@ -300,6 +300,45 @@ footer{
     color: #ffc04b;
 
 }
+/*---------Explore services page styles----*/
+.our-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 0.45fr));
+    gap: px;
+
+}
+.service-card{
+    display: grid;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+
+}
+.service-card h4{
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    width: 80px;
+}
+.service-card button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+
+}
+#service-plans p{
+    background-color: #f0e7cf;
+    color: #000000;
+    border-radius: 20px;
+    gap: 20px;
+    display: grid;
+    align-items: center;
+    width: 160px;
+    padding: 10px;
+}
 
 
 
